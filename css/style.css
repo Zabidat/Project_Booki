@@ -3,6 +3,14 @@
     font-family: 'Raleway', sans-serif;
 }
 
+/*le body supprime tous les espaces par defaut: la propriété margin:0*/
+
+body
+{
+    margin: 0;
+}
+
+
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
@@ -25,10 +33,48 @@ body {
     box-sizing: border-box;
 }
 
-a {
+
+/* Header and nav property*/ 
+
+header
+{
+    background-color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.navbar
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.navbar a
+{
+    padding: 20px 0px; 
+}
+
+.a-nav
+{
+    margin-left: 40px; 
+}
+
+.a-nav:hover 
+{
+    border-top: solid #0065FC;
+    color: #0065FC; 
+    padding-top: 20px; 
+}
+
+a 
+{
     color: inherit;
     text-decoration: none;
 }
+
+
+
 
 .section-title {
     margin: 0;
