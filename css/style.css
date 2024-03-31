@@ -113,12 +113,12 @@ a
 
 }
 
-/* Property for submit*/ 
+/* Property for button form*/ 
 
 .form-submit 
 {
     background-color: var(--main-color); 
-    color: var(--filter-bg-color);
+    color: var(--main-bg-color);
     border: none; 
     text-decoration: none;
     cursor: pointer;
@@ -131,6 +131,10 @@ a
     border-bottom-right-radius: 10px;
 }
 
+.form-submit i
+{
+    color: var(--main-bg-color); 
+}
 
 
 
@@ -266,9 +270,26 @@ a
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
 }
+
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    /* Hide input width value rechercher in small device*/
+    .input-hide
+    {
+        display: none;
+    }
+}
+
+
+/* La propriété ci-dessous permet de cacher le button (l'icône loupe) dans la version desktop et tablette (768px à 1440px)*/
+
+@media (max-width: 1440px) and (min-width:768px)
+{
+    .button-hide
+    {
+        display: none;
+    }
 }
