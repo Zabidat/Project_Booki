@@ -41,7 +41,7 @@ header
     margin-bottom: 20px;
 }
 
-.navbar
+.navbar 
 {
     display: flex;
     flex-direction: row;
@@ -135,6 +135,55 @@ a
 {
     color: var(--main-bg-color); 
 }
+
+
+/* Property for filter-bar*/
+
+.filter-bar
+{
+    display: flex;
+    margin-top: 30px; 
+    margin-bottom: 30px;
+    gap: 10px;
+    align-items: center; 
+}
+
+.filter-bar div
+{
+    font-size: 14px;
+    font-weight: bold; 
+    line-height: 24px;
+}
+
+.tag-filter
+{
+    border: 2px solid var(--main-bg-color);
+    border-radius: 20px; 
+}
+
+.tag-filter:hover
+{
+    background-color: var(--filter-bg-color);
+}
+
+.padding-8
+{
+    padding: 8px 10px;
+}
+
+/* Pour dessiner un cercle*/ 
+
+.fa-icon 
+{
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+    border: 2px solid var(--main-bg-color);;
+    text-align: center;
+}
+
+
+
 
 
 
