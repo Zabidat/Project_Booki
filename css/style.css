@@ -3,7 +3,8 @@
     font-family: 'Raleway', sans-serif;
 }
 
-/*le body supprime tous les espaces par defaut: la propriété margin:0*/
+
+/*no margin for body*/ 
 
 body
 {
@@ -75,7 +76,7 @@ a
 
 /*All of width parents and hide overflow*/
 
-.w-100
+.w-100 
 {
     overflow: hidden;
     width: 100%; 
@@ -171,7 +172,7 @@ a
     padding: 8px 10px;
 }
 
-/* Pour dessiner un cercle*/ 
+/* Make circle icon*/ 
 
 .fa-icon 
 {
@@ -183,12 +184,7 @@ a
 }
 
 
-
-
-
-
-
-
+/* */ 
 
 .section-title {
     margin: 0;
@@ -231,10 +227,59 @@ a
     box-sizing: border-box;
 }
 
+
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
 }
+
+/*Property hebergements cards*/ 
+
+.hebergements-cards .card 
+{
+    margin-top: 33px;  
+    display: flex; 
+    flex-direction: column;
+}
+
+/* For image*/
+
+.hebergements-cards img 
+{
+    width: 33%;
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px; 
+}
+
+/*For content cards */
+
+.hebergements-cards .card-content
+{
+    width: 40%; 
+    padding-left: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*for card title*/
+
+.hebergements-cards .card-title
+{
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+/* for card subtitle*/ 
+.hebergements-cards .card-subtitle
+{
+    margin: 0;  
+}
+
+
+
 
 /****** Populaires ***********/
 .populaires {
@@ -295,6 +340,11 @@ a
 
     .hebergements {
         width: 100%;
+    }
+
+    .hebergements-cards a 
+    {
+        width: 30%;
     }
 
     .populaires {
