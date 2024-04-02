@@ -73,6 +73,12 @@ a
     text-decoration: none;
 }
 
+.logo-img
+{
+    width: 100px;
+    height: 30px; 
+}
+
 
 /*All of width parents and hide overflow*/
 
@@ -264,18 +270,24 @@ a
     justify-content: space-between;
 }
 
+.hebergements-cards a 
+{
+    width: 30%;
+}
 /*for card title*/
 
 .hebergements-cards .card-title
 {
     margin-top: 10px;
     margin-bottom: 8px;
+    font-size: 13px;
 }
 
 /* for card subtitle*/ 
 .hebergements-cards .card-subtitle
 {
     margin: 0;  
+    font-size: 13px;
 }
 
 /* for duplicate cards hebergements*/
@@ -382,7 +394,7 @@ a
 .activity-cards img 
 {
     width: 100%;
-    min-height: 300px;
+    height: 300px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -406,7 +418,46 @@ a
 .activity-cards
 {
     display: flex; 
-    gap: 25px;
+    justify-content: space-between;
+}
+
+.activity-cards a
+{
+  width: 23%;
+}
+
+
+/****** Footer ***********/
+
+.footer-section
+{
+    background-color: var(--main-bg-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px; 
+    margin-bottom: 0; 
+    padding: 20px;
+}
+
+.footer-section p 
+{
+    font-size: 18px ;
+    font-weight: bold;
+    
+}
+
+.no-puce
+{
+    list-style-type: none; 
+    line-height: 30px;
+    font-size: 16px;
+    padding-left: 0px;
+}
+
+/* chaque colonne prend 30% du parent*/ 
+.m-s-3{
+    width: 30%;
 }
 
 
@@ -443,26 +494,16 @@ a
     .populaires-cards .card-title {
         font-size: 14px;
     }
-
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
 
-    .hebergements-cards a 
-    {
-        width: 30%;
-    }
-
-    .activity-cards a
-    {
-        width: 25% !important;
-    }
 }
 
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* Hide input width value rechercher in small device*/
+    /* Hide input width value search in small device*/
     .input-hide
     {
         display: none;
