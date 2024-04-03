@@ -30,6 +30,7 @@ body {
 .main-container {
     width: 100%;
     max-width: 1440px;
+    min-height: 320px;
     padding: 0 50px;
     box-sizing: border-box;
 }
@@ -50,14 +51,9 @@ header
     align-items: center; 
 }
 
-.navbar a
-{
-    padding: 20px 0px; 
-}
-
 .a-nav
 {
-    margin-left: 40px; 
+    padding: 20px;  
 }
 
 .a-nav:hover 
@@ -76,7 +72,8 @@ a
 .logo-img
 {
     width: 100px;
-    height: 30px; 
+    height: 30px;
+    padding: 20px 0px; 
 }
 
 
@@ -155,7 +152,13 @@ a
     align-items: center; 
 }
 
-.filter-bar div
+.filter-element 
+{
+    display: flex;
+    gap: 10px;
+}
+
+.filter-bar .filter-element 
 {
     font-size: 14px;
     font-weight: bold; 
@@ -173,7 +176,7 @@ a
     background-color: var(--filter-bg-color);
 }
 
-.padding-8
+.padding-8 
 {
     padding: 8px 10px;
 }
@@ -376,6 +379,7 @@ a
     background-color: white;
     border-radius: 20px; 
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    height: 370px;
 }
 
 .card-actvty img
@@ -409,8 +413,8 @@ a
 /*for card title*/
 .activity-cards .card-title
 {
-    margin-top: 10px;
-    margin-bottom: 8px; 
+    padding-top: 10px;
+    padding-bottom: 8px; 
     padding: 5px; 
 }
 
@@ -498,6 +502,35 @@ a
         font-size: 13px;
     }
 
+    /* intégrer height ds card-activity pour que toute les cartes aient la même taille  */
+    .card-actvty
+    {
+        height: 240px; 
+    }
+
+    .activity-cards img 
+    {
+        height: 150px; 
+    }
+
+    .activity-cards .card-title
+    {
+        line-height: 18px;
+        align-items: center;
+    } 
+
+    .filter-bar
+    {
+        
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0px;
+    }
+
+    .filter-element
+    {
+        flex-wrap: wrap;
+    }
 }
 
 
@@ -508,7 +541,106 @@ a
     {
         display: none;
     }
+
+
+    /* Header for small device property*/
+
+    .navbar
+    {
+        display: flex;
+        flex-direction: column; 
+    }
+
+    .logo-img
+    {
+        padding: 30px;
+    }
+
+    .a-nav:hover 
+    {
+        border-bottom: solid var(--main-color);
+        border-top: none; 
+    }
+
+    /*Reverse populaires à la place d'hebergements*/ 
+    .hebergements-and-populaires
+    {
+        flex-direction: column-reverse;
+    }
+
+    .hebergements-and-populaires section
+    {
+        width: 100%;
+    }
+
+    /* Placer les cards populaires en colonnes*/ 
+    .populaires-cards
+    {
+        flex-direction: column;
+    }
+
+    /*Prendre 100% du largeur puisqu'ils sont en colonnes*/ 
+    .populaires-cards a 
+    {
+        width: 100%; 
+    }
+
+
+    .hebergements-cards
+    {
+        flex-direction: column;
+    }
+
+    .hebergements-cards a 
+    {
+        width: 100%;
+    }
+
+    .hebergements-and-populaires section
+    {
+        border-radius: 0px; 
+    }
+
+    .hebergements
+    {
+        background-color: #ffffff !important;
+    }
+
+
+    /*Placer les cards Activity en colonnes*/
+    .activity-cards
+    {
+        flex-direction: column;
+    }
+
+    .activity-cards a 
+    {
+        width: 100%; 
+    }
+
+    /*Pour ranger les elements du footer en colonne*/
+    .footer-section
+    {
+        flex-direction: column;
+    }
+
+    .footer-section div 
+    {
+        width: 100%; 
+    }
+
+    .section-title
+    {
+        font-size: 18px;
+    }
+
+    /*Réduire la taille du h2 info section*/ 
+    .title-info
+    {
+        font-size: 20px; 
+    }
 }
+
 
 
 /* La propriété ci-dessous permet de cacher le button (l'icône loupe) dans la version desktop et tablette (768px à 1440px)*/
@@ -517,6 +649,6 @@ a
 {
     .button-hide
     {
-        display: none;
+        display: none; 
     }
 }
