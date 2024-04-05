@@ -19,11 +19,15 @@
 
         <!-- Header section-->
         <header>
-            <nav class="navbar">
+            <nav class="navbar flex-space-row">
                <a href="#"><img src="images/logo/Booki.png" alt="Logo Booki" class="logo-img"></a>
-                <div> 
-                    <a href="#hebergements" class="a-nav">Hébergements</a>
-                    <a href="#activités" class="a-nav">Activités</a>
+                <div class="flex-space-row"> 
+                    <div>
+                        <a href="#hebergements" class="a-nav">Hébergements</a>
+                    </div>
+                    <div>
+                        <a href="#activités" class="a-nav">Activités</a>
+                    </div>
                 </div>
             </nav>
         </header>
@@ -37,14 +41,29 @@
                 <section>
                     <div>
                         <h2 class="title-info">Trouvez votre hébergement pour des vacances de rêve</h2>
-                        <p>En plein centre-ville ou en pleine nature</p>
+                        <p class="title-para">En plein centre-ville ou en pleine nature</p>
                     </div>
 
                     <!--Search-->
                     <div class="margin-top-bottom">
-                        <form>
-                            <label><i class="fa-solid fa-location-dot  form-icon"></i></label><input type="search" name="locatsearch" class="form-search"><input type="button" value="Rechercher" class="form-submit input-hide"><button class="form-submit button-hide"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <form >
+                            <div class="form-border">
+                                <div>
+                                    <i class="fa-solid fa-location-dot  form-icon"></i>
+                                </div>
+
+                                <div>
+                                    <input type="search" name="locatsearch" class="form-search" placeholder="Marseille, France">
+                                </div>
+
+                                <div>
+                                    <input type="button" value="Rechercher" class="form-submit input-hide">
+                                    <button class="form-submit button-hide"> <i class="fa-solid fa-magnifying-glass"></i></button>
+                                </div>
+
+                            </div>
                         </form>
+
                     </div> 
                 </section>
 
@@ -53,17 +72,35 @@
                     <h3 class="padding-8">Filtres</h3> 
 
                     <div class="filter-element">
-                        <div class="tag-filter padding-8"><i class="fa-solid fa-money-bill-wave"></i>  Économique</div>
-                        <div class="tag-filter padding-8"><i class="fa-solid fa-child"></i>  Familial</div>
-                        <div class="tag-filter padding-8"><i class="fa-solid fa-heart"></i>  Romatique</div>
-                        <div class="tag-filter padding-8"><i class="fa-solid fa-fire"></i>  Nos pépites</div>
+                        <div class="tag-filter padding-8">
+                            <i class="fa-solid fa-money-bill-wave"></i>
+                            <p>Économique</p>  
+                        </div>
+
+                        <div class="tag-filter padding-8">
+                            <i class="fa-solid fa-child"></i>
+                            <p> Familial</p>
+                        </div>
+
+                        <div class="tag-filter padding-8">
+                            <i class="fa-solid fa-heart"></i> 
+                            <p> Romatique</p>
+                        </div>
+
+                        <div class="tag-filter padding-8">
+                            <i class="fa-solid fa-fire"></i> 
+                            <p> Nos pépites</p> 
+                        </div>
+
                     </div>
+
                 </div> 
 
                 <!--Information-->
 
-                <div>
-                    <p><i class="fa-solid fa-info fa-icon"></i> Plus de 500 logements sont disponibles dans cette ville</p>
+                <div class="flex-info">
+                    <i class="fa-solid fa-info fa-icon"></i> 
+                    <p class="p-info">Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
 
             </div>
@@ -165,7 +202,7 @@
                                 <img src="./images/hebergements/marcus-loke.jpg" alt="Image de la chambre d'hôtel Auberge La canebière">
                                 <div class="card-content">
                                     <div>
-                                        <h3 class="card-title">Hôtel Auberge La Canebière</h3>
+                                        <h3 class="card-title">Auberge La Canebière</h3>
                                         <p class="card-subtitle">Nuit à partir de 25<span class="euro">€</span></p>
                                     </div>
                                     <div class="card-rating">

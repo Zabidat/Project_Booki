@@ -30,7 +30,7 @@ body {
 .main-container {
     width: 100%;
     max-width: 1440px;
-    min-height: 320px;
+    min-width: 320px;
     padding: 0 50px;
     box-sizing: border-box;
 }
@@ -42,18 +42,19 @@ header
 {
     margin-bottom: 20px;
 }
-
-.navbar 
+.flex-space-row
 {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between; 
+    justify-content: space-between;
+}
+.navbar 
+{
     align-items: center; 
 }
 
 .a-nav
 {
-    padding: 20px;  
+    padding: 20px; 
 }
 
 .a-nav:hover 
@@ -100,7 +101,7 @@ a
     background-color: var(--main-bg-color);
     padding: 9px 10px 12px;
     cursor: pointer; 
-    border-top-left-radius: 10px;
+    border-top-left-radius: 10px; 
     border-bottom-left-radius: 10px;
 }
 
@@ -110,12 +111,22 @@ a
 {
     padding: 5px 15px;
     color: #000000; 
+    border: none;
     font-weight: bold;
-    border: 1px solid var(--main-bg-color);
     line-height: 24px; 
-    font-size: 16px;
+    font-size: 13px;
 
 }
+
+
+::placeholder
+{
+    color: #000000;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center; 
+}
+
 
 /* Property for button form*/ 
 
@@ -128,11 +139,23 @@ a
     cursor: pointer;
     outline: 0;
     white-space: normal;
-    font-size: 16px;
-    padding: 10px 10px 10px;
+    font-size: 14px;
+    padding: 9px 10px 11px; 
     font-weight: bold;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    
+}
+
+/* Contener form search */
+.form-border
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid var(--main-bg-color);
+    width: 298px;
+    border-radius: 10px;
 }
 
 .form-submit i
@@ -162,11 +185,13 @@ a
 {
     font-size: 14px;
     font-weight: bold; 
-    line-height: 24px;
 }
 
 .tag-filter
 {
+    display: flex; 
+    align-items: center;
+    gap: 0px 5px;
     border: 2px solid var(--main-bg-color);
     border-radius: 20px; 
 }
@@ -178,17 +203,30 @@ a
 
 .padding-8 
 {
-    padding: 8px 10px;
+    padding: 4px 8px; 
 }
 
-/* Make circle icon*/ 
+/* Icon paragraph and Make circle icon*/ 
+
+.flex-info
+{
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.p-info
+{
+    margin: 0px;
+    padding-left: 10px; 
+}
 
 .fa-icon 
 {
     border-radius: 50%;
     height: 18px;
     width: 18px;
-    border: 2px solid var(--main-bg-color);;
+    border: 2px solid var(--main-bg-color); 
     text-align: center;
 }
 
@@ -546,21 +584,23 @@ a
 
     .navbar
     {
-        display: flex;
         flex-direction: column; 
     }
-
+    
     .logo-img
     {
         padding: 30px;
     }
-
+   
     .a-nav:hover 
     {
         border-bottom: solid var(--main-color);
         border-top: none; 
     }
-
+    .flex-space
+    {
+        width: 100%;
+    }
     /*Reverse populaires à la place d'hebergements*/ 
     .hebergements-and-populaires
     {
@@ -632,20 +672,68 @@ a
 
     .section-title
     {
-        font-size: 18px;
+        font-size: 18px; 
     }
 
     /*Réduire la taille du h2 info section*/ 
     .title-info
     {
-        font-size: 20px; 
+        font-size: 15px; 
     }
 
     .card-title
     {
         font-size: 14px;
     }
+
+    .a-nav
+    {
+        padding: 10px;
+    }
+
+    .title-para
+    {
+        font-size: 13px;
+    }
+
+    .form-search
+    {
+        font-size: 10px;
+    }
+
+    ::placeholder
+    {
+        font-size: 10px; 
+    }
+
+    .padding-8
+    {
+        font-size: 12px; 
+    }
+
+    .p-info
+    {
+        font-size: 12px;
+    }
+    .fa-icon 
+    {
+        height: 25px;
+        width: 25px;
+        padding-top: 4px;
+    }
+
+    .form-submit
+    {
+        filter: drop-shadow(0px 4px 0px rgba(0, 0, 0, 0.1));
+        border-radius: 10px;
+    }
+    .form-border
+    {
+        width: 200px;
+        
+    }
     
+
 }
 
 
@@ -659,3 +747,4 @@ a
         display: none; 
     }
 }
+
