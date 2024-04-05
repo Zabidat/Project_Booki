@@ -597,7 +597,7 @@ a
         border-bottom: solid var(--main-color);
         border-top: none; 
     }
-    .flex-space
+    .flex-space-row
     {
         width: 100%;
     }
