@@ -42,7 +42,7 @@ header
 {
     margin-bottom: 20px;
 }
-.flex-space-row
+.flex-space-row  
 {
     display: flex;
     justify-content: space-between;
@@ -497,7 +497,7 @@ a
     padding-left: 0px;
 }
 
-/* chaque colonne prend 30% du parent*/ 
+/* each column take 30% for parents*/ 
 .m-s-3{
     width: 30%;
 }
@@ -540,7 +540,7 @@ a
         font-size: 13px;
     }
 
-    /* intégrer height ds card-activity pour que toute les cartes aient la même taille  */
+    /* Integrate height into card-activity so that all cards have the same size */
     .card-actvty
     {
         height: 240px; 
@@ -601,7 +601,7 @@ a
     {
         width: 100%;
     }
-    /*Reverse populaires à la place d'hebergements*/ 
+    /*Reverse the popular section in place of hostings for the mobile version*/ 
     .hebergements-and-populaires
     {
         flex-direction: column-reverse;
@@ -612,13 +612,13 @@ a
         width: 100%;
     }
 
-    /* Placer les cards populaires en colonnes*/ 
+    /* Placing popular cards in columns*/ 
     .populaires-cards
     {
         flex-direction: column;
     }
 
-    /*Prendre 100% du largeur puisqu'ils sont en colonnes*/ 
+    /*Take 100% of the width since they are in columns*/ 
     .populaires-cards a 
     {
         width: 100%; 
@@ -646,7 +646,7 @@ a
     }
 
 
-    /*Placer les cards Activity en colonnes*/
+    /*Place Activity cards in columns*/
     .activity-cards
     {
         flex-direction: column;
@@ -659,7 +659,7 @@ a
 
     
 
-    /*Pour ranger les elements du footer en colonne*/
+    /*To arrange footer elements in columns*/
     .footer-section
     {
         flex-direction: column;
@@ -675,7 +675,7 @@ a
         font-size: 18px; 
     }
 
-    /*Réduire la taille du h2 info section*/ 
+    /*Reduce the size of the h2 info section*/ 
     .title-info
     {
         font-size: 15px; 
@@ -738,7 +738,7 @@ a
 
 
 
-/* La propriété ci-dessous permet de cacher le button (l'icône loupe) dans la version desktop et tablette (768px à 1440px)*/
+/* The property below hides the button (l"icône loupe) in the desktop and tablet versions (768px to 1440px).*/ 
 
 @media (max-width: 1440px) and (min-width:768px)
 {
