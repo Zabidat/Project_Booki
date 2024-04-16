@@ -3,12 +3,22 @@
     font-family: 'Raleway', sans-serif;
 }
 
-
+html {
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
 /*no margin for body*/ 
 
-body
-{
+body {
     margin: 0;
+
+}
+
+
+/* all of elt take value of box-sizing from html*/
+* {
+    
+    box-sizing: inherit;
 }
 
 
@@ -29,8 +39,6 @@ body {
 
 .main-container {
     width: 100%;
-    max-width: 1440px;
-    min-width: 320px;
     padding: 0 50px;
     box-sizing: border-box;
 }
@@ -61,7 +69,7 @@ header
 {
     border-top: solid var(--main-color);
     color: var(--main-color); 
-    padding-top: 20px; 
+    padding-top: 10px; 
 }
 
 a 
@@ -73,8 +81,8 @@ a
 .logo-img
 {
     width: 100px;
-    height: 30px;
-    padding: 20px 0px; 
+    height: 50px;
+    padding: 10px 0px; 
 }
 
 
@@ -181,7 +189,7 @@ a
     gap: 10px;
 }
 
-.filter-bar .filter-element 
+.filter-bar  
 {
     font-size: 14px;
     font-weight: bold; 
@@ -201,7 +209,7 @@ a
     background-color: var(--filter-bg-color);
 }
 
-.padding-8 
+.padding-8  
 {
     padding: 4px 8px; 
 }
@@ -573,6 +581,22 @@ a
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+    /*Remove padding*/
+    .main-container
+    {
+        padding: 0px;
+    }
+    .logo-img {
+        width: 120px;
+       height: auto;
+    }
+      
+    .w-100
+    {
+        padding: 0px 15px;
+    }
+    
+    
     /* Hide input width value search in small device*/
     .input-hide
     {
@@ -600,6 +624,7 @@ a
     .flex-space-row
     {
         width: 100%;
+        justify-content: space-around;
     }
     /*Reverse the popular section in place of hostings for the mobile version*/ 
     .hebergements-and-populaires
@@ -657,7 +682,11 @@ a
         width: 100%; 
     }
 
-    
+    /* all of card of activity take normal size of content*/
+    .card-actvty
+    {
+        height: auto;
+    }
 
     /*To arrange footer elements in columns*/
     .footer-section
@@ -740,7 +769,7 @@ a
 
 /* The property below hides the button (l"icône loupe) in the desktop and tablet versions (768px to 1440px).*/ 
 
-@media (max-width: 1440px) and (min-width:768px)
+@media (max-width: 2000px) and (min-width:768px)
 {
     .button-hide
     {
