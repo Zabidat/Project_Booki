@@ -233,8 +233,8 @@ a
 .fa-icon 
 {
     border-radius: 50%;
-    height: 18px;
-    width: 18px;
+    height: 24px;
+    width: 24px;
     border: 2px solid var(--main-bg-color); 
     text-align: center;
 }
@@ -577,6 +577,7 @@ a
     {
         flex-wrap: wrap;
     }
+    
 }
 
 
@@ -749,7 +750,7 @@ a
     {
         height: 25px;
         width: 25px;
-        padding-top: 4px;
+    
     }
 
     .form-submit
@@ -770,8 +771,12 @@ a
     .tag-filter
     {
         width: 45%;
-        gap: 13px;
     } 
+    .tag-filter i
+    {
+    padding-right: 5px;
+    }
+
 }
 
 
