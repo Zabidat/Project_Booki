@@ -123,7 +123,7 @@ a
     font-weight: bold;
     line-height: 24px; 
     font-size: 13px;
-
+    width: 100%; 
 }
 
 
@@ -202,6 +202,7 @@ a
     gap: 0px 5px;
     border: 2px solid var(--main-bg-color);
     border-radius: 20px; 
+    justify-content: center;
 }
 
 .tag-filter:hover
@@ -727,7 +728,7 @@ a
 
     .form-search
     {
-        font-size: 10px;
+        font-size: 10px; 
     }
 
     ::placeholder
@@ -758,11 +759,19 @@ a
     }
     .form-border
     {
-        width: 200px;
-        
+        width: 100%;    
     }
     
-
+    .input-size
+    {
+        width: 85%;
+    }
+    
+    .tag-filter
+    {
+        width: 45%;
+        gap: 13px;
+    } 
 }
 
 
