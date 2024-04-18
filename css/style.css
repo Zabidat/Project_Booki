@@ -39,6 +39,7 @@ body {
 
 .main-container {
     width: 100%;
+    max-width: 1440px; 
     padding: 0 50px;
     box-sizing: border-box;
 }
@@ -138,6 +139,13 @@ a
 
 /* Property for button form*/ 
 
+/* The property below hides the button (l"icône loupe) in the desktop and tablet versions.*/ 
+
+.button-hide
+{
+    display: none;  
+}
+
 .form-submit 
 {
     background-color: var(--main-color); 
@@ -181,6 +189,11 @@ a
     margin-bottom: 30px;
     gap: 10px;
     align-items: center; 
+}
+
+.element-aside
+{
+    width: 100%; 
 }
 
 .filter-element 
@@ -605,6 +618,10 @@ a
         display: none;
     }
 
+    .button-hide
+    {
+        display: block;  
+    }
 
     /* Header for small device property*/
 
@@ -777,17 +794,5 @@ a
     padding-right: 5px;
     }
 
-}
-
-
-
-/* The property below hides the button (l"icône loupe) in the desktop and tablet versions (768px to 1440px).*/ 
-
-@media (max-width: 2000px) and (min-width:768px)
-{
-    .button-hide
-    {
-        display: none; 
-    }
-}
+} 
 
